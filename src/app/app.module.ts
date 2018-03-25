@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { BinderDirective } from './binder.directive';
+import {FormsModule} from '@angular/forms';
+import { BinderComponent } from './binder/binder.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BinderDirective,
+    BinderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
